@@ -1,0 +1,4 @@
+../Core/Src/EX10.c:9:6:EX10_Init	32	static
+../Core/Src/EX10.c:29:6:clearAllClock	8	static
+../Core/Src/EX10.c:43:6:setNumberOnClock	16	static
+../Core/Src/EX10.c:84:6:clearNumberOnClock	16	static

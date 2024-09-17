@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "EX5.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -90,8 +90,14 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  EX5_Init(); int counter =0;
   while (1)
   {
+	  if(counter >=10) counter =0;
+	  Trafficlight (counter);
+	  SevenSEGEX5(counter);
+	  HAL_Delay(1000);
+	  counter++;
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
