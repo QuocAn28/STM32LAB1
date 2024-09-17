@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "EX1.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -90,8 +90,12 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  EX1_Init(); int status =0;
   while (1)
   {
+	  EX1(status);
+	  HAL_Delay(1000);
+	  status=!status;
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
