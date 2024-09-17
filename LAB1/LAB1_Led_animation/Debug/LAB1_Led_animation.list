@@ -219,8 +219,8 @@ int main(void)
 	  EX1(status);
  80001fe:	6878      	ldr	r0, [r7, #4]
  8000200:	f7ff ffd0 	bl	80001a4 <EX1>
-	  HAL_Delay(1000);
- 8000204:	f44f 707a 	mov.w	r0, #1000	@ 0x3e8
+	  HAL_Delay(2000);
+ 8000204:	f44f 60fa 	mov.w	r0, #2000	@ 0x7d0
  8000208:	f000 f926 	bl	8000458 <HAL_Delay>
 	  status=!status;
  800020c:	687b      	ldr	r3, [r7, #4]

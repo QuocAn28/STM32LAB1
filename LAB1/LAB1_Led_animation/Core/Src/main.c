@@ -94,7 +94,7 @@ int main(void)
   while (1)
   {
 	  EX1(status);
-	  HAL_Delay(1000);
+	  HAL_Delay(2000);
 	  status=!status;
     /* USER CODE END WHILE */
 
