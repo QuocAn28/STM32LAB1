@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "EX6.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -90,8 +90,14 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  EX6_Init(); int counter=1;
   while (1)
   {
+
+	  if (counter >= 13) counter = 1;
+	  EX6 (counter);
+	  HAL_Delay(1000);
+	  counter ++;
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
