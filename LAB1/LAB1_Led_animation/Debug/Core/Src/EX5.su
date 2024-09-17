@@ -1,0 +1,3 @@
+../Core/Src/EX5.c:9:6:EX5_Init	32	static
+../Core/Src/EX5.c:40:6:Trafficlight	16	static
+../Core/Src/EX5.c:106:6:SevenSEGEX5	16	static

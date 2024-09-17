@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "EX10.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -90,8 +90,27 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  EX10_Init();
+  int hour =6;
+  int minute = 59;
+  int second = 45;
   while (1)
   {
+	  clearAllClock();
+	  if(hour >=24) hour=0;
+	  if(minute >=60){
+		  hour++;
+		  minute =0;
+	  }
+	  if(second >=60){
+		  minute++;
+		  second =0;
+	  }
+	  setNumberOnClock(hour%12);
+	  setNumberOnClock(minute/5);
+	  setNumberOnClock(second/5);
+	  HAL_Delay(1000);
+	  second++;
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
